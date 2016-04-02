@@ -31,5 +31,10 @@ namespace HelloWorldApp.Controllers
         {
             return HttpUtility.HtmlEncode("ここはKillerMachine:へろー" + name + "さん. numTime = " + numTimes);
         }
+
+        public string Login(string name, int id = 1)
+        {
+            return HttpUtility.HtmlEncode("Hello" + name + " ID:" + id);
+        }
     }
 }
