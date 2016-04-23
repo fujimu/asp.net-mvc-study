@@ -1,0 +1,82 @@
+﻿@model PCRegistSystem.Models.PCManageInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PCManageInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IPAdress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IPAdress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MachineType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MachineType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PCName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PCName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
